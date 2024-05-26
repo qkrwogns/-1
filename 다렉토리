@@ -1,0 +1,11 @@
+import os
+import subprocess
+
+# 디렉토리 생성
+os.makedirs("websocket-sync", exist_ok=True)
+
+# 디렉토리 이동
+os.chdir("websocket-sync")
+
+# npm 초기화
+subprocess.run(["npm", "init", "-y"])
